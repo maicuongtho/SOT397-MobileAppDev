@@ -3,9 +3,11 @@ package thomc.LVNangCao;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.ListView;
 
 import java.util.ArrayList;
 
+import thomc.LVNangCao.adapters.CountryAdapter;
 import thomc.LVNangCao.models.Country;
 
 public class MainActivity extends AppCompatActivity {
@@ -19,6 +21,13 @@ public class MainActivity extends AppCompatActivity {
         dsQG.add(new Country("Vietnam",90,"vn"));
         dsQG.add(new Country("Russia",110,"ru"));
         dsQG.add(new Country("United State",80,"us"));
+
+        ListView listView = findViewById(R.id.lvQG);
+
+        CountryAdapter adapter = new CountryAdapter(this, dsQG);
+        listView.setAdapter(adapter);
+
+
 
     }
 }
