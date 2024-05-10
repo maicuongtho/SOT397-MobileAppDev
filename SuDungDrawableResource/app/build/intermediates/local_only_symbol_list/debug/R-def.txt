@@ -1,0 +1,27 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color purple_200
+color purple_500
+color purple_700
+color teal_200
+color teal_700
+color white
+drawable green_rec_button
+drawable header_bg
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+drawable nen_chuyen_tiep
+drawable red_circle_button
+id button
+id button2
+id header
+id imageView
+layout activity_main
+mipmap anh_profile
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+style Theme.SuDungDrawableResource
+xml backup_rules
+xml data_extraction_rules

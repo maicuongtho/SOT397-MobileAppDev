@@ -1,0 +1,26 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color purple_200
+color purple_500
+color purple_700
+color teal_200
+color teal_700
+color white
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id imLandscap
+id recyclerLand
+id tvLandscapName
+layout activity_main
+layout landscap_item
+mipmap buckingham
+mipmap effel
+mipmap flag_tower_of_hanoi
+mipmap ic_launcher
+mipmap ic_launcher_round
+mipmap statue_of_liberty
+string app_name
+style Theme.Recyclerview_LandScape
+xml backup_rules
+xml data_extraction_rules

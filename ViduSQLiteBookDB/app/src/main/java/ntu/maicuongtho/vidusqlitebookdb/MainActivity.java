@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 import java.util.ArrayList;
 
@@ -82,7 +84,9 @@ public class MainActivity extends AppCompatActivity {
        for (int i=0; i<dsSach.size(); i++ )
            dsTenSach.add(dsSach.get(i).getBookName());
     // Phần việc hiện lên là của SV
-
+        ListView listViewTenSach = findViewById(R.id.lvTenSach);
+        ArrayAdapter<String> adapterTenSach = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, dsTenSach);
+        listViewTenSach.setAdapter(adapterTenSach);
 
     }
 //
