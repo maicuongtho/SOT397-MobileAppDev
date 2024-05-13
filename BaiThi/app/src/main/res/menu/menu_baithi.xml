@@ -17,7 +17,7 @@
     <item
         android:id="@+id/navigation_cau3"
         android:icon="@android:drawable/checkbox_on_background"
-        android:title="Cau 2" />
+        android:title="Cau 3" />
 
     <item
         android:id="@+id/navigation_cau4"
