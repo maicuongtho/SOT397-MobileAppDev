@@ -53,7 +53,8 @@ public class MainActivity extends AppCompatActivity {
 
  // TRUY VẤN SELECT
         //B1. Mở CSDL
-       SQLiteDatabase db = openOrCreateDatabase("QLSach.db", // tên file = tên DB
+        // B1
+        SQLiteDatabase db = openOrCreateDatabase("QLSach.db", // tên file = tên DB
                                                     MODE_PRIVATE,  // giới hạn truy cập
                                                      null          // con trỏ bản ghi
                            );
@@ -83,9 +84,18 @@ public class MainActivity extends AppCompatActivity {
        ArrayList<String> dsTenSach = new ArrayList<String>();
        for (int i=0; i<dsSach.size(); i++ )
            dsTenSach.add(dsSach.get(i).getBookName());
+//       ArrayList<String> dsThongTinSach = new ArrayList<String>();
+//       for (int i=0; i<dsSach.size(); i++ ) {
+//           String thongtinSach ="";
+//           thongtinSach = dsSach.get(i).getBookName() + dsSach.get(i).getPrice();
+//           dsThongTinSach.add(thongtinSach);
+//       }
     // Phần việc hiện lên là của SV
         ListView listViewTenSach = findViewById(R.id.lvTenSach);
-        ArrayAdapter<String> adapterTenSach = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, dsTenSach);
+        ArrayAdapter<String> adapterTenSach = new ArrayAdapter<String>(
+                                                this,
+                                                android.R.layout.simple_list_item_1,
+                                                dsTenSach);
         listViewTenSach.setAdapter(adapterTenSach);
 
     }
