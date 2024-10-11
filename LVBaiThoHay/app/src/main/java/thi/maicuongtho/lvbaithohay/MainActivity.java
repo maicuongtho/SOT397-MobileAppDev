@@ -61,6 +61,18 @@ public class MainActivity extends AppCompatActivity {
             }
 
         });
+        btnThemBaiTho.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Lấy tên bài
+                String tenBai = editTextTenBaiTho.getText().toString();
+                //Thêm vào nguồn
+                dsBaiTho.add(tenBai);
+                // Báo adapter cập nhật lại ListView
+                adapterBaiTho.notifyDataSetChanged();
+            }
+        });
+
     }// end Create
     void XuLyKhiNhanVaoViTriThu(int pos) {
         // Lay phan tu
