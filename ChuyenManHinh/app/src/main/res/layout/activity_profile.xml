@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/soft_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center_horizontal">
+
+        <!-- Ảnh đại diện của người dùng -->
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/my_pic"
+            android:contentDescription="User profile image"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/circle_background"
+            android:scaleType="centerCrop"
+             />
+
+        <!-- Tên người dùng -->
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="John Doe"
+            android:textSize="24sp"
+            android:textColor="#333333"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Mô tả ngắn về người dùng -->
+        <TextView
+            android:id="@+id/user_bio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobile Developer | Coffee Lover"
+            android:textSize="16sp"
+            android:textColor="#666666"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Liên kết GitHub -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/yt"
+                android:contentDescription="GitHub icon"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:id="@+id/github_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="github.com/johndoe"
+                android:textSize="16sp"
+                android:textColor="#1A73E8" />
+        </LinearLayout>
+
+        <!-- Liên kết Website -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/yt"
+                android:contentDescription="Website icon"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:id="@+id/website_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="www.johndoe.com"
+                android:textSize="16sp"
+                android:textColor="#1A73E8" />
+        </LinearLayout>
+
+        <!-- Liên kết Facebook -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/yt"
+                android:contentDescription="Facebook icon"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:id="@+id/facebook_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="facebook.com/johndoe"
+                android:textSize="16sp"
+                android:textColor="#1A73E8" />
+        </LinearLayout>
+
+        <!-- Liên kết YouTube -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/yt"
+                android:contentDescription="YouTube icon"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:id="@+id/youtube_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="youtube.com/johndoe"
+                android:textSize="16sp"
+                android:textColor="#1A73E8" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
